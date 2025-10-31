@@ -123,6 +123,8 @@ impl Command {
                     Err(format!("Invalid !sleep delay: {}. Must be a number", delay))
                 }
             }
+            // TODO:
+            ["!forget"] => todo!(),
             _ => Err(format!("Unknown command: {}", s)),
         }
     }
